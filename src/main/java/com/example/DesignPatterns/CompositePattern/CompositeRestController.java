@@ -26,7 +26,7 @@ public class CompositeRestController {
 
     @GetMapping("/{colorName}")
     public String getComposite(@RequestParam String colorName) {
-git
+
         List<Product> productList = new ArrayList<>();
         productList.add(new Telephone(colorName));
         productList.add(new Charger(colorName));
